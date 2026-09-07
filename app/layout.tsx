@@ -46,12 +46,12 @@ export async function generateMetadata(): Promise<Metadata> {
   ]);
   const defaultTitle =
     locale === "ar"
-      ? "منصتي التعليمية | دورات وتعلم أونلاين"
-      : "My Learning Platform | Courses and Online Learning";
+      ? "منصة تعليم الأحياء | دورات ودروس أونلاين"
+      : "Biology Learning Platform | Online Courses and Lessons";
   const defaultDescription =
     locale === "ar"
-      ? "منصة تعليمية حديثة لدورات البرمجة والتصميم والتطوير"
-      : "A modern learning platform for programming, design, and development courses";
+      ? "منصة متخصصة في تدريس مادة الأحياء — دورات ودروس أونلاين للطلاب بأسلوب واضح ومنهجية منظمة"
+      : "A biology teaching platform with clear, structured online courses and lessons for students";
   const title = settings
     ? pickLocalizedText(locale, settings.pageTitle, settings.pageTitleEn) || defaultTitle
     : defaultTitle;
